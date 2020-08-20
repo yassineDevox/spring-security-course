@@ -1,0 +1,14 @@
+package course.java.springsec.springsec;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HomeRessource {
+	
+	@GetMapping("")
+	String home() {
+		return ("<h1>hello najlaita !!</h1>");
+	}
+
+}
